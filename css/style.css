@@ -1,0 +1,51 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #78809e;
+    line-height: 26px;
+    font-size: 16px;
+}
+h1 {
+    font-size: 80px;
+    font-weight: 600;
+    color: #192B59;
+}
+a {
+    text-decoration: none;
+}
+
+.nav {
+    font-size: 12px;
+    color: #6e7ea9;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-free {
+    color: #ffffff;
+    font-weight: 400;
+    background-color: #4c84e0;
+}
+.grid h2{
+    font-size: 40px;
+    color: #192B59;
+    font-weight: 700;
+
+}
+.grid h2 span {
+    color: #4d84e0;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: block;
+}
+.grid-item h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #192B59;
+}
+
+.grid-item a {
+    font-size: 14px;
+    color: #588ce2;
+    font-weight: 600;
+}
