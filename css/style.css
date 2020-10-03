@@ -18,13 +18,60 @@ a {
     color: #6e7ea9;
     font-weight: 700;
     text-transform: uppercase;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.btn-primary {
+    background-color: #4c84e0;
+    border: 1px solid #4c84e0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    padding: 20px 40px;
+    border-radius:30px;
+}
+.btn-primary:hover {
+    color: #4c84e0;
+    background-color: #ffffff;
 }
 
-.btn-free {
-    color: #ffffff;
-    font-weight: 400;
-    background-color: #4c84e0;
+.btn-secondary{
+    background-color: #cedae7;
+    border: 1px solid #cedae7;
+    color: #8089ab;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    padding: 20px 40px;
+    border-radius:30px;
 }
+.btn-secondary:hover {
+    background-color: #ffffff;
+}
+.btn-free {
+    font-weight: 400;
+    padding: 20px 56px;
+    letter-spacing: 1.7px;
+}
+.btn-info {
+    background-color: transparent;
+    border: 1px solid #dde1e5;
+    color: #8084ae;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    padding: 20px 40px;
+    border-radius:30px;
+}
+.btn-group a+a {
+    margin-left: 15px;
+}
+
 .grid h2{
     font-size: 40px;
     color: #192B59;
