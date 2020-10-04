@@ -103,6 +103,7 @@ a {
     right: 0;
     top:189px;
 }
+
 .btn-primary {
     background-color: #4c84e0;
     border: 1px solid #4c84e0;
@@ -118,7 +119,6 @@ a {
     color: #4c84e0;
     background-color: transparent;
 }
-
 .btn-secondary{
     background-color: #cedae7;
     border: 1px solid #cedae7;
@@ -154,10 +154,10 @@ a {
     background-color:#94b4cc;
     border: 1px solid #94b4cc;
 }
-
 .btn-group a+a {
     margin-left: 15px;
 }
+
 .list-company {
     list-style-type: none;
     padding: 0;
@@ -191,6 +191,46 @@ a {
     height: 69px;
 }
 
+.grid {
+    display: grid;
+    grid-template-areas: "a b c"
+                        "d b c"
+                        "d f g"
+                        "e f g"
+                        "e h h";
+
+    max-width: 1100px;
+    margin: 50px auto;
+    grid-gap: 30px;
+    padding: 30px;
+    grid-template-columns:31% 33.5% 33.5%;
+    align-items: center;
+}
+.grid-title{
+    grid-area: a;
+}
+.grid-item-1 {
+   grid-area: b ;
+}
+.grid-item-2 {
+    grid-area:c ;
+}
+.grid-item-3 {
+    grid-area: d;
+}
+.grid-item-4 {
+    grid-area: e;
+}
+.grid-item-5 {
+    grid-area: f;
+}
+.grid-item-6 {
+    grid-area: g;
+}
+
+.grid-text {
+    grid-area: h;
+}
 
 .grid h2{
     font-size: 40px;
@@ -209,11 +249,62 @@ a {
     font-size: 20px;
     font-weight: 600;
     color: #192B59;
+    margin-bottom: 18px;
 }
 .grid-item a {
     font-size: 14px;
     color: #588ce2;
     font-weight: 600;
+}
+.grid-item {
+    text-align: center;
+    box-shadow: 0 8px 10px #f2f2f2;
+    border-radius: 10px;
+    padding: 60px 40px;
+}
+.grid-icon {
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto 36px;
+}
+.grid-icon-1{
+    background-image: url(../img/icon1.png);
+    height: 79px;
+    width: 73px;
+}
+.grid-icon-2 {
+    background-image: url(../img/icon2.png);
+    height: 85px;
+    width: 89px;
+}
+.grid-icon-3 {
+    background-image: url(../img/icon3.png);
+    height: 82px;
+    width: 79px;
+}
+.grid-icon-4{
+    background-image: url(../img/icon4.png);
+    height: 92px;
+    width: 103px;
+}
+.grid-icon-5 {
+    background-image: url(../img/icon5.png);
+    height: 90px;
+    width: 85px;
+}
+.grid-icon-6 {
+    background-image: url(../img/icon6.png);
+    height: 87px;
+    width: 100px;
+}
+.Founder {
+    font-size: 16px;
+    color: #4c84e0;
+}
+.Founder span{
+    font-size: 16px;
+    font-weight: 700;
+    color:#192B59;
 }
 
 .list-stat {
@@ -242,10 +333,6 @@ a {
 .screen {
     margin-top:36px;
     margin-bottom: -7px;
-}
-
-.box-subscribe h2 {
-    /*padding-top: 65px;*/
 }
 
 .box-subscribe h2, .box-subscribe p {
@@ -285,8 +372,12 @@ a {
     top:9px;
     right: 8px;
     padding: 17px 50px;
-
 }
+.btn-primary {
+    font-size: 14px;
+    font-weight: 700;
+}
+
 .box-subscribe-child {
     flex-basis: 49%;
 }
