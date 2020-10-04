@@ -64,6 +64,18 @@ a {
     max-width: 1100px;
     margin: 0 auto;
 }
+.box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 305px;
+}
+.logo{
+    display: block;
+    background-image: url(../img/logo.png);
+    width: 181px;
+    height: 49px;
+}
 .nav {
     font-size: 12px;
     font-weight: 700;
@@ -74,11 +86,22 @@ a {
     display: flex;
 }
 .nav > li{
-    padding: 15px ;
+    padding: 0 20px ;
 }
 
 .nav-item{
     color: #6e7ea9;
+    letter-spacing: 2px;
+}
+.screen-img {
+    display: block;
+    background-image: url(../img/header-screen.png);
+    background-repeat: no-repeat;
+    width: 916px;
+    height: 740px;
+    position: absolute;
+    right: 0;
+    top:189px;
 }
 .btn-primary {
     background-color: #4c84e0;
@@ -126,9 +149,48 @@ a {
     padding: 20px 40px;
     border-radius:30px;
 }
+.btn-info:hover {
+    color:#ffffff;
+    background-color:#94b4cc;
+    border: 1px solid #94b4cc;
+}
+
 .btn-group a+a {
     margin-left: 15px;
 }
+.list-company {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.list-company-item {
+    display: block;
+
+}
+.company-1 {
+    background-image: url(../img/company-1.png);
+    flex-basis: 198px;
+    height: 58px;
+}
+.company-2 {
+    background-image: url(../img/company-2.png);
+    flex-basis: 200px;
+    height: 69px;
+}
+.company-3 {
+    background-image: url(../img/company-3.png);
+    flex-basis: 201px;
+    height: 47px;
+}
+.company-4 {
+    background-image: url(../img/company-4.png);
+    flex-basis: 200px;
+    height: 69px;
+}
+
 
 .grid h2{
     font-size: 40px;
@@ -188,10 +250,9 @@ a {
 }
 .box-price-item {
     background-color: #f6faff;
-    width: 350px;
-    height: 624px;
-    padding-top:10px;
-    margin-top: 50px;
+    flex-basis: 32%;
+    position: relative;
+    padding: 74px 0 58px 0;
 }
 .box-price-item.active {
     background-color: #242f58;
@@ -200,16 +261,20 @@ a {
 .box-price-item ul {
     list-style-type: none;
     padding-left: 0;
-}
-.box-price-item li {
+    margin-bottom: 59px;
+    margin-top: 34px;
     font-size: 14px;
-    line-height: 40px;
+}
+.box-price-item ul>li {
+    margin-bottom: 14px;
 }
 .box-price-item h3 {
     font-size: 70px;
     color: #192B59;
     font-weight: 700;
-    margin: 76px 0 0 0;
+    margin-top:0;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
 }
 .box-price-item.active h3 {
     color: #ffffff;
@@ -224,33 +289,43 @@ a {
 .box-price-item p {
     text-transform: uppercase;
     font-size: 14px;
-    letter-spacing: 2.9px;
+    letter-spacing: 3px;
     color: #4a83fb;
+}
+.box-price-item:first-child h3 {
+    margin-bottom: 35px;
 }
 .box-price-item.active p {
     color: #ffffff;
 }
-
-
-
-
-
 .box-price-item::after {
     content: "";
+    width: 57px;
+    height: 100%;
+    background-image: url(../img/triangle.svg);
     position: absolute;
-    top: 0;
+    top:0;
     right: 0;
-    width: 0; height: 0;
-    border-style: solid;
-    border-width: 20px 0 0 20px;
-    border-color: #fff transparent transparent #e2edc1;
-    box-shadow: 0 0 4px rgba(0,0,0,0.4);
-    /*#eff4fb*/
+}
+.box-price-item.active::after {
+    display: none;
 }
 
 
-
 /* PAGE */
+.page-header {
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 53px 0 300px 0;
+    position: relative;
+}
+.page-company {
+    background-image: url(../img/company-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 106px 0 99px 0;
+}
 .page-stat, .page-screen  {
     background-color: #eff6ff;
 }
