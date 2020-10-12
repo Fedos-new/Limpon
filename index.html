@@ -220,10 +220,13 @@
                 <li><span>53K</span>Awards</li>
             </ul>
         </div>
+        <div class="object-circle"></div>
+        <div class="object-rhombus"></div>
     </div>
     <div class="page-app">
         <div class="wrap">
             <div class="content-app">
+                <div class="object-intro"></div>
                 <h2 class="title-h2">Meet With Future&nbsp;Landingpage</h2>
                 <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, voluptatibus.Lorem ipsum
                     dolor sit amet, consectetur adipisicing elit. Amet at, eius est exercitationem explicabo illum natus
@@ -364,19 +367,37 @@
                     <img class="avatar" src="img/team1.png" alt="founder">
                     <p class="position">founder</p>
                     <p class="name">Ricardo T. Obrien</p>
-                    <button class="btn-more" type="button"></button>
+                    <button class="btn-team btn-more btn-ricardo" type="button"><span></span></button>
+                    <ul class="social-team social-ricardo" style="display:none;">
+                        <li><a href="" target="_blank" class="btn-team btn-fb"><span></span></a></li>
+                        <li><a href="" target="_blank" class="btn-team btn-tw"><span></span></a></li>
+                        <li><a href="" target="_blank" class="btn-team btn-be"><span></span></a></li>
+                        <li><a href="" target="_blank" class="btn-team btn-web"><span></span></a></li>
+                    </ul>
                 </div>
                 <div class="box-team-item">
                     <img class="avatar" src="img/team2.png" alt="ceo">
                     <p class="position">ceo</p>
-                    <p class="name">lberto Del Rio</p>
-                    <button class="btn-more" type="button"></button>
+                    <p class="name">Alberto Del Rio</p>
+                    <button class="btn-team btn-more btn-alberto" type="button"><span></span></button>
+                    <ul class="social-team social-alberto" style="display:none;">
+                        <li><a href="" target="_blank" class="btn-team btn-fb"><span></span></a></li>
+                        <li><a href="" target="_blank" class="btn-team btn-tw"><span></span></a></li>
+                        <li><a href="" target="_blank" class="btn-team btn-be"><span></span></a></li>
+                        <li><a href="" target="_blank" class="btn-team btn-web"><span></span></a></li>
+                    </ul>
                 </div>
                 <div class="box-team-item">
                     <img class="avatar" src="img/team3.png" alt="designer">
                     <p class="position">designer</p>
                     <p class="name">Thomas Alva Adison</p>
-                    <button class="btn-more" type="button"></button>
+                    <button class="btn-team btn-more btn-thomas" type="button"><span></span></button>
+                    <ul class="social-team social-thomas" style="display:none;">
+                        <li><a href="" target="_blank" class="btn-team btn-fb"><span></span></a></li>
+                        <li><a href="" target="_blank" class="btn-team btn-tw"><span></span></a></li>
+                        <li><a href="" target="_blank" class="btn-team btn-be"><span></span></a></li>
+                        <li><a href="" target="_blank" class="btn-team btn-web"><span></span></a></li>
+                    </ul>
                 </div>
             </div>
 
@@ -405,6 +426,26 @@
         </ul>
     </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $(".btn-ricardo").click(function(){
+            $(".btn-ricardo").hide();
+            $(".social-ricardo").fadeIn();
+        });
+    });
+    $(document).ready(function(){
+        $(".btn-alberto").click(function(){
+            $(".btn-alberto").hide();
+            $(".social-alberto").fadeIn();
+        });
+    });
+    $(document).ready(function(){
+        $(".btn-thomas").click(function(){
+            $(".btn-thomas").hide();
+            $(".social-thomas").fadeIn();
+        });
+    });
+</script>
 </body>
 </html>
