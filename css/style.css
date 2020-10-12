@@ -888,16 +888,19 @@ a {
     width: 569px;
     height: 661px;
 }
-.object-intro {
+.intro {
     display: block;
+    color: rgba(0,0,0,0.04);
+    font-size: 300px;
+    font-weight: 900;
+    letter-spacing: 0;
     position: absolute;
-    background-image: url(../img/intro-gray.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    left: 0;
     right: 0;
-    top: -198px;
-    width: 695px;
-    height: 220px;
+    top:0;
+    text-align: center;
+    margin: 0;
+
 }
 
 
