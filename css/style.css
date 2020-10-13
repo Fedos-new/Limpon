@@ -800,7 +800,7 @@ a {
 .box-team-item .btn-more span:hover {
     background-position: 1px -23px;
 }
-.box-team-item .btn-more:focus {
+.box-team-item .btn-more:focus, .btn-primary:focus {
     outline: none;
 }
 
@@ -921,6 +921,8 @@ a {
     max-width: 232px;
     letter-spacing: 2px;
 }
+
+
 .contact-form .btn-primary::before{
     content: '';
     display: block;
